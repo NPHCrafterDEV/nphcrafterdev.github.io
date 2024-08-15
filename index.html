@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <meta property="og:title" content="Komplett Geil" />
+    <meta property="og:title" content="Gaming seite geil" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nphcrafterdev.github.io/" />
     <meta property="og:image" content="glartze.jpg" />
@@ -30,9 +30,16 @@
     </style>
 </head>
 <body>
-    <video loop autoplay>
+    <video id="myVideo" loop autoplay muted>
         <source src="video.mp4" type="video/mp4">
         Ihr Browser unterstützt das Video-Tag nicht.
     </video>
+
+    <script>
+        window.addEventListener('load', function() {
+            var video = document.getElementById('myVideo');
+            video.muted = false; // Video nach dem Laden entstummen
+        });
+    </script>
 </body>
 </html>
