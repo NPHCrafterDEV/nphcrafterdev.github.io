@@ -30,16 +30,9 @@
     </style>
 </head>
 <body>
-    <video id="myVideo" loop autoplay>
+    <video id="myVideo" loop autoplay muted>
         <source src="video.mp4" type="video/mp4">
         Ihr Browser unterstützt das Video-Tag nicht.
     </video>
-
-      <script>
-        window.addEventListener('load', function() {
-            var video = document.getElementById('myVideo');
-            video.play(); // Video nach dem Laden abspielen
-        });
-    </script>
 </body>
 </html>
